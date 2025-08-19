@@ -3,7 +3,7 @@
 ![Logo](img/logo.png)
 
 
-## _NOTE_ : This repository is _**NOT**_ affiliated with or sponsored by NVIDIA. _cuSuite_ is an independent, community project and is not an official NVIDIA product
+## _NOTE_ : This repository is _**NOT**_ affiliated with or sponsored by NVIDIA. _cuSuite_ is an independent, community project and is _**NOT**_ an official NVIDIA product
 
 
 This repository provides an automated **Batch Script Installer** for CUDA and cuDNN on Windows.  
