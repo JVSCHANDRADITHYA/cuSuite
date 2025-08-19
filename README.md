@@ -82,3 +82,19 @@ The compatibility matrix for CUDA and cuDNN:
    ```bash
    .\NVIDIA_MakeDL_Tools.bat
    ```
+
+## Manual Verification
+
+After installation, verify the setup:
+
+1. Check CUDA installation:
+   ```bash
+   nvcc --version
+   ```
+
+2. Check GPU status:
+   ```bash
+   nvidia-smi
+   ```
+## Images of cuSuite
+![alt text](img/scrnsht.png)
