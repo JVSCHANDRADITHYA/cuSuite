@@ -82,8 +82,8 @@ The compatibility matrix for CUDA and cuDNN:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-repo>/cuda-installer.git
-   cd cuda-installer
+   git clone https://github.com/JVSCHANDRADITHYA/cuSuite.git
+   cd cuSuite
    ```
 
 2. Run the installer:
