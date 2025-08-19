@@ -6,14 +6,22 @@
 ## _NOTE_ : This repository is _**NOT**_ affiliated with or sponsored by NVIDIA. _cuSuite_ is an independent, community project and is _**NOT**_ an official NVIDIA product
 
 
-This repository provides an automated **Batch Script Installer** for CUDA and cuDNN on Windows.  
+_cuSuite_ is an automated installer for CUDA and cuDNN on Windows. It detects GPU driver requirements, selects compatible CUDA/cuDNN versions, validates library linking, and safely manages PATH updates. The guided installation flow reduces setup errors and verifies that toolchains and DLLs are ready for build and runtime.
+
 The script handles the following:
 
-- Detects **GPU model and driver version**.  
-- Installs the **latest compatible CUDA Toolkit**.  
-- Sets up **cuDNN support** for deep learning frameworks.  
-- Configures **environment variables** for seamless usage.  
-- Verifies installation with `nvcc --version` and `nvidia-smi`.
+- Compatibility intelligence: checks GPU driver↔CUDA↔cuDNN requirements before install.
+
+- Version alignment: selects known‑good combinations to avoid build/runtime mismatches.
+
+- Linking verification: confirms headers, libs, and DLLs are discoverable by compilers and at runtime.
+
+- PATH safety: adds only what’s needed, preserves existing settings, supports rollback.
+
+- Guided install flow: step‑by‑step with dry‑run preview and detailed logs.
+
+- Fast verification: runs nvcc checks and cuDNN presence tests post‑install.
+
 
 
 ## Components of Original Packages
