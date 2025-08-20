@@ -22,7 +22,10 @@ The script handles the following:
 
 - Fast verification: runs nvcc checks and cuDNN presence tests post‑install.
 
+## [Releases Page](https://github.com/JVSCHANDRADITHYA/cuSuite/releases)
+Check the releases page to install the latest version of cuSuite : [Releases Page](https://github.com/JVSCHANDRADITHYA/cuSuite/releases).
 
+If you prefer batch installation, you can use the provided .bat files and follow the given instructions in the repository's installation guide.
 
 ## Components of Original Packages
 
@@ -79,7 +82,9 @@ The compatibility matrix for CUDA and cuDNN:
 ---
 ## Installation (cuSuite.exe)
 
-1. Download the latest cuSuite installer from the [releases page](https://github.com/JVSCHANDRADITHYA/cuSuite/releases).
+1. Download the latest cuSuite installer from the [releases page](https://github.com/JVSCHANDRADITHYA/cuSuite/releases)
+
+   - **Latest_Version [v1.13.9-12]** : [cuSUITE_v1.13.9-12.exe](https://github.com/JVSCHANDRADITHYA/cuSuite/releases/download/v1.13.9-12/cuSuite.EXE).
 
 2. Run the installer (in Administrator mode) and follow the on-screen instructions.
 
