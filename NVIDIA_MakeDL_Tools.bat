@@ -1,4 +1,9 @@
+
 @echo off
+
+:: --- Self-elevate to Admin (UAC) ---
+>nul 2>&1 net session || (powershell -NoProfile -ExecutionPolicy Bypass -Command "Start-Process -FilePath '%~f0' -Verb RunAs" & exit /b)
+
 setlocal enabledelayedexpansion
 
 echo.
@@ -91,7 +96,8 @@ if "%latest_version%" NEQ "%driver_version%" (
         echo [INFO] Found existing NVIDIA_Driver.exe, running installer...
         echo ==========================================================================================
         start /wait NVIDIA_Driver.exe
-        echo Installer finished. Path: %cd%\NVIDIA_Driver.exe
+        echo Installer finished. 
+        echo Path: %cd%\NVIDIA_Driver.exe
         echo Exit code: !errorlevel!
         echo ==========================================================================================
         echo.
@@ -243,12 +249,14 @@ if exist "%cudnn_base%" (
     echo ==========================================================================================
     if exist "%cudnn_in_cuda%" (
         echo ==========================================================================================
-        echo [INFO] cuDNN header file exists in CUDA include directory: %cudnn_in_cuda%
+        echo [INFO] cuDNN header file exists in CUDA include directory: 
+        echo %cudnn_in_cuda%
         echo ==========================================================================================
         goto :success
     ) else (
         echo ==========================================================================================
-        echo [ERROR] cuDNN header file not found in CUDA include directory: %cudnn_in_cuda%
+        echo [ERROR] cuDNN header file not found in CUDA include directory: 
+        echo %cudnn_in_cuda%
         echo Copying cuDNN to CUDA directories...
         echo ==========================================================================================
         goto :copy_part
@@ -286,7 +294,8 @@ echo.
 REM === Step 3: Locate cuDNN installation path ===
 if not exist "%cudnn_base%" (
     echo ==========================================================================================
-    echo [ERROR] Could not find cuDNN installation folder: %cudnn_base%
+    echo [ERROR] Could not find cuDNN installation folder: 
+    echo %cudnn_base%
     echo Please verify installation path manually.
     echo ==========================================================================================
     goto :eof

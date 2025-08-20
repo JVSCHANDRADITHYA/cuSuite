@@ -77,8 +77,13 @@ The compatibility matrix for CUDA and cuDNN:
 - Ensure **cuDNN is matched with your installed CUDA version**.  
 
 ---
+## Installation (cuSuite.exe)
 
-## Installation (Automated)
+1. Download the latest cuSuite installer from the [releases page](https://github.com/JVSCHANDRADITHYA/cuSuite/releases).
+
+2. Run the installer (in Administrator mode) and follow the on-screen instructions.
+
+## Installation (Using batch)
 
 1. Clone this repository:
    ```bash
@@ -86,7 +91,7 @@ The compatibility matrix for CUDA and cuDNN:
    cd cuSuite
    ```
 
-2. Run the installer:
+2. Run the .bat:
    ```bash
    .\NVIDIA_MakeDL_Tools.bat
    ```
