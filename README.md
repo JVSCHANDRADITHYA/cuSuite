@@ -1,4 +1,4 @@
-# cuSuite - Install fast. Build faster.
+# cuSuite - Build Faster. Code Better. Optimize Further
 
 ![Logo](img/logo.png)
 
